@@ -42,15 +42,15 @@ nav{
 }
 .linking {
   padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   list-style-type: none;
-  
-}
- .linking > a {
   text-decoration: none;
   color: #ffffff;
   opacity: 0.5;
 }
-.linking:hover > a{
+.linking:hover {
   opacity: 1;
 } 
 
