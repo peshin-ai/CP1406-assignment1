@@ -1,4 +1,24 @@
-.logo-container{
-  width: 10px;
-  height: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+*{
+  padding: 0;
+  margin: 0;
 }
+body{
+  font-family: 'Libre Baskerville', serif;
+  background: #cbdfbd;
+}
+header{
+  margin: auto;
+  display: flex;
+  background: #d4e09b;
+  width: 90%;
+  height: 20vh;
+}
+.logo-container {
+  flex: 1;
+}
+nav{
+  flex:1.5;
+}
+
+
