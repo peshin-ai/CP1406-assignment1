@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Libre Baskerville', serif;
-  background: #ffb20f;
+  background: linear-gradient(0deg,#ffb20f 50%,#eba207 100%);
 }
 
 /* header area */
@@ -63,42 +63,58 @@ header{
 main{
   margin: 10vh auto auto auto;
   width: 95%;
-  height: 100vh;
+  height: 120vh;
   background: transparent;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 1fr 5fr 5fr 5fr;
+  grid-template-rows: 0.5fr 5fr 5fr;
+  grid-template-areas: 
+  "nav dosth dosth dosth"
+  "nav content1 content2 content3"
+  "blank content4 content5 content6";
+  grid-gap: 1.2ch;
+  
 }
 .nav2{
   background: #6F1D1B;
+  grid-area: nav;
+  
+}
+#blank{
+  background: transparent;
+  grid-area: blank;
 }
 #dosth{
   background: #955939;
+  grid-area: dosth;
 }
 #content1 {
   background: #A87748;
+  grid-area: content1;
 }
 #content2 {
   background: #BB9457;
+  grid-area: content2;
 }
 #content3 {
   background: #432818;
+  grid-area: content3;
 }
 #content4 {
   background: #99582A;
+  grid-area: content4;
 }
 #content5 {
   background: #CC9F69;
+  grid-area: content5;
 }
 #content6 {
   background: #FFE6A7;
+  grid-area: content6;
 }
 footer{
+  margin-top: 2vh;
+  height: 20vh;
   background:  #FFE8AF;
+  grid-area: footer;
 }
-
-
-
-
-
-
