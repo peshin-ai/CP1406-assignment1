@@ -5,15 +5,17 @@
 }
 body{
   font-family: 'Libre Baskerville', serif;
-  background: #cbdfbd;
+  background: #210f04;
 }
 header{
   margin: auto;
   display: flex;
-  background: #d4e09b;
+  background: #000000;
   width: 90%;
   height: 15vh;
   align-items: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 0px 40px #bb6b00, 0px 0px 80px #bb6b00;
 }
 .logo-container {
   flex: 1;
@@ -26,23 +28,31 @@ nav{
   display: flex;
 }
 #bakery-shop-logo{
-   width: 15vh; 
+   margin-left: 10px;
+   width: 13vh; 
    height: auto; 
 }
 .shop-name{
   margin-left: 10px;
   margin-top: 5vh;
-}
-
-.linking{
-  list-style-type: none;
-}
-
- .linking > a {
-  text-decoration: none;
+  color: #ffffff;
 }
 .navigation{
   justify-content: space-around;
 }
+.linking {
+  list-style-type: none;
+}
+ .linking > a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.linking:hover > a{
+  opacity: 1;
+} 
+
+
+
 
 
