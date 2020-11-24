@@ -7,6 +7,8 @@ body{
   font-family: 'Libre Baskerville', serif;
   background: #ffb20f;
 }
+
+/* header area */
 header{
   margin: auto;
   display: flex;
@@ -20,7 +22,7 @@ header{
 .logo-container {
   flex: 1;
 }
-nav{
+.nav1{
   flex:2;
   
 }
@@ -56,6 +58,44 @@ nav{
   transform: scale(1.3);
   text-shadow: 0px -3px 0px rgba(0,0,0,0.7), 0 0 5px rgba(255,255,255,0.6),0 -5px 15px rgba(255,255,255,0.7);
 } 
+
+/* main area */
+main{
+  margin: 10vh auto auto auto;
+  width: 95%;
+  height: 100vh;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 5fr 5fr 5fr;
+}
+.nav2{
+  background: #6F1D1B;
+}
+#dosth{
+  background: #955939;
+}
+#content1 {
+  background: #A87748;
+}
+#content2 {
+  background: #BB9457;
+}
+#content3 {
+  background: #432818;
+}
+#content4 {
+  background: #99582A;
+}
+#content5 {
+  background: #CC9F69;
+}
+#content6 {
+  background: #FFE6A7;
+}
+footer{
+  background:  #FFE8AF;
+}
 
 
 
