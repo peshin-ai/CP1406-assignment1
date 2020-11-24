@@ -49,9 +49,11 @@ nav{
   text-decoration: none;
   color: #ffffff;
   opacity: 0.5;
+  font-size: 18px;
 }
 .linking:hover {
   opacity: 1;
+  transform: scale(1.2);
 } 
 
 
