@@ -14,10 +14,15 @@ header{
   display: flex;
   background: #210f04;
   width: 90%;
-  height: 15vh;
+  height: 10vh;
   align-items: center;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0px 0px 40px #972d07, 0px 0px 80px #972d07;
+  position: sticky;
+  top: 0;
+  box-shadow: 15px 0px 20px #9D7109, 15px 5px 40px #972d07;
+}
+header:hover{
+  box-shadow: 15px 0px 30px #9D7109, 15px 5px 60px #972d07;
 }
 .logo-container {
   flex: 1;
@@ -31,7 +36,7 @@ header{
 }
 #bakery-shop-logo{
    margin-left: 10px;
-   width: 13vh; 
+   width: 10vh; 
    height: auto; 
 }
 .shop-name{
@@ -51,7 +56,7 @@ header{
   text-decoration: none;
   color: #ffffff;
   opacity: 0.5;
-  font-size: 18px;
+  font-size: 16px;
 }
 .linking:hover {
   opacity: 1;
@@ -60,7 +65,7 @@ header{
 } 
 
 /* main area */
-main{
+.container{
   margin: 10vh auto auto auto;
   width: 95%;
   height: 120vh;
@@ -68,11 +73,12 @@ main{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 0.5fr 5fr 5fr;
+  grid-gap: 1.2em;
   grid-template-areas: 
   "nav dosth dosth dosth"
   "nav content1 content2 content3"
   "blank content4 content5 content6";
-  grid-gap: 1.2ch;
+  z-index: 1;
   
 }
 .nav2{
@@ -112,6 +118,7 @@ main{
   background: #FFE6A7;
   grid-area: content6;
 }
+
 footer{
   margin-top: 2vh;
   height: 20vh;
