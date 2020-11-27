@@ -5,7 +5,8 @@
 }
 body{
   font-family: 'Libre Baskerville', serif;
-  background: linear-gradient(0deg,#ffb20f 50%,#eba207 100%);
+  background: #fff;
+  
 }
 
 /* header area */
@@ -57,6 +58,7 @@ header:hover{
   color: #ffffff;
   opacity: 0.5;
   font-size: 16px;
+  transition: 0.5s;
 }
 .linking:hover {
   opacity: 1;
@@ -66,7 +68,7 @@ header:hover{
 
 /* main area */
 .container{
-  margin: 10vh auto auto auto;
+  margin: 5vh auto auto auto;
   width: 95%;
   height: 120vh;
   background: transparent;
