@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -26,18 +27,22 @@ header:hover{
 .logo-container {
   flex: 1;
 }
-.nav1{
+nav{
   flex:2;
   
 }
 .logo-container, .navigation {
   display: flex;
 }
+
+/* logo */
 #bakery-shop-logo{
    margin-left: 20px;
    width: 10vh; 
    height: auto; 
 }
+
+/* shop name */
 .shop-name{
   margin-left: 10px;
   margin-top: 3vh;
@@ -46,6 +51,8 @@ header:hover{
 .navigation{
   justify-content: space-around;
 }
+
+/* link */
 .linking {
   padding: 10px;
   width: 100%;
@@ -68,22 +75,159 @@ header:hover{
 .container{
   margin: 5vh auto auto auto;
   width: 95%;
-  height: 120vh;
-  background: transparent;
+  height: 60vh;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 0.5fr 5fr 5fr;
-  grid-gap: 1.2em;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1vh;
   grid-template-areas: 
-  
+  "banner banner banner banner"
+  "form form-img form-img form-img";
   z-index: 1;
+
+  /*grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vh;
+  grid-template-areas: 
+  "banner"
+  "form";*/
   
 }
+/* banner */
+.banner{
+  height: 50vh;
+  width: 100%;
+  min-width: 50%;
+  grid-area: banner;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bakery-03.jpg");
+  background-attachment: fixed;
+  animation-name: banner;
+  animation-duration: 2s;
+  transition: 0.2s;
+}
 
+@keyframes banner { 
+  0%{
+    opacity: 0;
+    transform: translateX(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  } 
+}
 
+.banner:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner > p {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  top:50%;
+  text-align: center;
+}
+
+/* form */
+.form-img{
+  height: 100%;
+  width: 100%;
+  grid-area: form-img;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bakery-13.jpg");
+  background-attachment: fixed;
+  opacity: 0;
+  animation-name: form-img;
+  animation-delay: 0.7s;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+@keyframes form-img {
+  0%{
+    transform: translateX(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  } 
+}
+
+.form{
+  background-color: rgba(0,0,0, 0.2);
+  height: 100%;
+  width: 100%;
+  border-radius: transparent;
+  z-index: 99;
+  grid-area: form;
+}
+.form > h1{
+  text-align: center;
+}
+.form > form{
+  width: transparent;
+  margin-top: 5vh;
+  margin-left: 3vh;
+}
+
+input[type=text], select {
+  width: 90%;
+  padding: 10px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border-style: 1px solid;
+  border-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/*input[type = text]:focus {
+  border-style: 5px solid;
+  border-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+}*/
+
+input[type=submit] {
+  width: 20%;
+  padding: 10px 5px;
+  margin: 5vh 0 0 0;
+  display: inline-block;
+  border-style: 1px solid;
+  border-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media  screen and (min-width: 700px;) {
+  main{
+  margin: 5vh auto auto auto;
+  width: 95%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vh;
+  grid-template-areas: 
+  "banner"
+  "form";
+  z-index: 1;
+
+  /*grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1vh;
+  grid-template-areas: 
+  "banner banner banner banner"
+  "form form-img form-img form-img";
+  z-index: 1;*/
+  }
+}
+/* footer area */
 footer{
-  margin-top: 2vh;
+  margin-bottom: 2vh;
+  position: relative;
+  bottom: 0px;
   height: 20vh;
   background:  #FFE8AF;
-  grid-area: footer;
 }
