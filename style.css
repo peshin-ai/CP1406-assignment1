@@ -75,49 +75,11 @@ header:hover{
   grid-template-rows: 0.5fr 5fr 5fr;
   grid-gap: 1.2em;
   grid-template-areas: 
-  "nav dosth dosth dosth"
-  "nav content1 content2 content3"
-  "blank content4 content5 content6";
+  
   z-index: 1;
   
 }
-.nav2{
-  background: #6F1D1B;
-  grid-area: nav;
-  
-}
-#blank{
-  background: transparent;
-  grid-area: blank;
-}
-#dosth{
-  background: #955939;
-  grid-area: dosth;
-}
-#content1 {
-  background: #A87748;
-  grid-area: content1;
-}
-#content2 {
-  background: #BB9457;
-  grid-area: content2;
-}
-#content3 {
-  background: #432818;
-  grid-area: content3;
-}
-#content4 {
-  background: #99582A;
-  grid-area: content4;
-}
-#content5 {
-  background: #CC9F69;
-  grid-area: content5;
-}
-#content6 {
-  background: #FFE6A7;
-  grid-area: content6;
-}
+
 
 footer{
   margin-top: 2vh;
